@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>The Transformations of The Pop-up</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+        <header class="my-5 text-center">
+            <h1>The Transformations of The Pop-up</h1>
+            <span>Krittin Kunaree and Natawat Phokaew</span><br>
+            <span>Princess Chulabhorn Science high School Satun</span>
+        </header>
+        <div>
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="mb-3">Format</h4>
+                    <div class="my-3">
+                        <div class="form-check">
+                          <input id="1" name="format" type="radio" class="form-check-input" checked="" required="" onclick="format1();">
+                          <label class="form-check-label" for="1">
+                              <img src="img/1.png" style="width: 50%;">
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input id="2" name="format" type="radio" class="form-check-input" required="" onclick="format2();">
+                          <label class="form-check-label" for="2">
+                              <img src="img/2.png" style="width: 50%;">
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input id="3" name="format" type="radio" class="form-check-input" required="" onclick="format3();">
+                          <label class="form-check-label" for="3">
+                              <img src="img/3.png" style="width: 50%;">
+                          </label>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-4">
+                    <h4 class="mb-3">Constants</h4>
+                    <div class="my-3">
+                        <div id="inputformat1" class="row">
+                            <div class="col-6">
+                                <label for="a" class="form-label">A</label>
+                                <input type="text" class="form-control" id="a" placeholder="" required="">
+                            </div>
+                            <div class="col-6">
+                                <label for="b" class="form-label">B</label>
+                                <input type="text" class="form-control" id="b" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div id="inputformat2" class="row" style="display:none;">
+                            <div class="col-6">
+                                <label for="c" class="form-label">C</label>
+                                <input type="text" class="form-control" id="c" placeholder="" required="">
+                            </div>
+                            <div class="col-6">
+                                <label for="d" class="form-label">D</label>
+                                <input type="text" class="form-control" id="d" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div id="inputformat3" class="row" style="display:none;">
+                            <div class="col-6">
+                                <label for="e" class="form-label">E</label>
+                                <input type="text" class="form-control" id="e" placeholder="" required="">
+                            </div>
+                            <div class="col-6">
+                                <label for="f" class="form-label">F</label>
+                                <input type="text" class="form-control" id="f" placeholder="" required="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mb-3">Point</h4>
+                    <div class="my-3">
+                        <div class="c1 row">
+                            <div class="col-6">
+                                <label for="x" class="form-label">X</label>
+                                <input type="text" class="form-control" id="x" placeholder="" required="">
+                            </div>
+                            <div class="col-6">
+                                <label for="y" class="form-label">Y</label>
+                                <input type="text" class="form-control" id="y" placeholder="" required="">
+                            </div>
+                        </div>
+                    </div>
+  
+                    <hr class="my-4">
+          
+                    <button class="w-100 btn btn-primary btn-lg" onclick="transforms();">Transforms</button>
+                </div>
+
+                <div class="col-5">
+                    <h4 class="mb-3">Result</h4>
+                    <div class="my-3">
+                        <h5 class="mb-3 mx-5">Formular :</h5>
+                        <div class="text-center" id="formation">
+                            \[
+                            \begin{bmatrix}
+                            0 & 0 \\
+                            1 & 0\\
+                            0 & 1
+                            \end{bmatrix} 
+                            \begin{bmatrix}
+                            x \\
+                            y
+                            \end{bmatrix} =
+                            \begin{bmatrix}
+                            0 \\
+                            x \\
+                            y
+                            \end{bmatrix}
+                            \]
+                        </div>
+                        <h5 class="mb-3 mx-5">Point :</h5>
+                        <h5 class="text-center" id="points">
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=
+    "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script src=
+    "js/script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
